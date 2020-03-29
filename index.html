@@ -4,11 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=	, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Password Generator</title>
 </head>
 
 <body>
-  <script src="scrippt.js"></script>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <h3>password</h3>
+    <form>
+      <label for="charnum">Number Of Characters</label>
+      <input type="range" value="10" min="1" max="50" id="charamount">
+      <input type="number" value="10" min="1" max="50" id="charnum">
+
+      <label for="includeUppercase">Include Numbers</label>
+      <input type="checkbox" id="includeUppercase">
+
+      <label for="includeNumbers">Include Uppercase</label>
+      <input type="checkbox" id="includeNumbers">
+
+      <label for="includeSymbolsa">Include Symbols</label>
+      <input type="checkbox" id="includeSymbolsa">
+
+      <button type="submit">Generate Password</button>
+    </form>
+  </div>
+
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>
